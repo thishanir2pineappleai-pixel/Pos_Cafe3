@@ -7,3 +7,5 @@ logs/
 *.log
 graphify-out/
 backend/uploads/*
+backend/services/*/uploads/
+backend/services/*/generated/
