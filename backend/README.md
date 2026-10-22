@@ -1,3 +1,5 @@
+> Architecture: this README describes the legacy backend on port 4000. The gateway and four independently packaged services are the migration target. See [the comparison report](docs/architecture-comparison.md) for ownership, commands, and remaining work.
+
 # POS Cafe backend: Menu, Sales, Settings, Authentication, Dashboard and Staff Management
 
 Node.js + Express (CommonJS). **Development only: no database. Authentication exists for Settings and Dashboard; the Menu

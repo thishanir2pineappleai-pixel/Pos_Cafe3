@@ -18,6 +18,10 @@
     "build": "pnpm -r build",
     "db:generate": "pnpm -r --if-present db:generate",
     "db:migrate:deploy": "pnpm -r --if-present db:migrate:deploy",
-    "db:migrate:status": "pnpm -r --if-present db:migrate:status"
+    "db:migrate:status": "pnpm -r --if-present db:migrate:status",
+    "dev": "pnpm --parallel --filter @pos-cafe/frontend --filter @pos-cafe/gateway --filter \"./backend/services/*-service\" dev",
+    "dev:legacy": "pnpm --filter @pos-cafe/backend dev",
+    "check:architecture": "node scripts/check-architecture.cjs",
+    "test:services": "pnpm --filter @pos-cafe/shared --filter @pos-cafe/gateway --filter \"./backend/services/*-service\" test"
   }
 }
